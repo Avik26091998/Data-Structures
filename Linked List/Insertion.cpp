@@ -65,6 +65,17 @@ void push_position(node **head,int num,int pos){
     }
 
 }
+void Reverse(node *head){
+
+  node *curr = head, *prev = NULL, *next;
+  while(curr != NULL){
+
+    next = curr->next;
+    curr->next = prev;
+    prev = curr;
+    curr = next;
+  }
+}
 void print(node *head){
 	while(head!=NULL) {cout<<head->data<<"->";head=head->next;}
 	cout<<"NULL\n";
