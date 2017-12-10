@@ -1,3 +1,5 @@
+// Source : HackerEarth
+
 vector <string> hashTable[20];
     int hashTableSize=20;
 
