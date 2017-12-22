@@ -57,7 +57,7 @@ int main(){
 
 	string text = "avik", pattern = "vi";
 
-	cout << Rabin_Karp(pattern, text);
+	cout << Rabin_Karp(pattern, text);     // Starting index of pattern in text
 
 	return 0;
 }
