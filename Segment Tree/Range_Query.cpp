@@ -13,9 +13,9 @@ int arr[10001], tree[4*10001];
 void build_tree(int node, int a, int b){
 
     if(a > b) return;
-    if(a == b){
+    if(a == b){       // leaf node
         
-        tree[node] = arr[a];
+        tree[node] = arr[a];     // init leaf node
         return;
     }
 
