@@ -6,7 +6,6 @@
 
 #include<bits/stdc++.h>
 #define ll long long
-#define inf 0x7fffffff
 using namespace std;
 
 int arr[10001], tree[4*10001];
@@ -41,7 +40,7 @@ void update_tree(int node, int a, int b, int i, int j, int value){
 
  int query_tree(int node, int a, int b, int i, int j){
 
-    if(a > b || a > j || b < i) return -inf;
+    if(a > b || a > j || b < i) return INT_MIN;
     if(a >= i && b <= j) return tree[node];
 
     int q1 = query_tree(2 * node, a, (a + b) / 2, i, j);
