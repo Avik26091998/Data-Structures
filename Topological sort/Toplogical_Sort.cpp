@@ -1,5 +1,5 @@
 // Time Complexity - O(V + E)
-// Space Complexity - O(V)
+// Space Complexity - O(V + E)
 
 
 #include<bits/stdc++.h>
